@@ -29,7 +29,25 @@ namespace MyApp
             Console.WriteLine("\t* multiply");
             Console.WriteLine("\t/ divide");
 
-
+            switch(Console.ReadLine())
+            {
+                case "+":
+                    result = num1 + num2;
+                    Console.WriteLine($"Result: {num1} + {num2} = " + result);
+                    break;
+                case "-":
+                    result = num1 - num2;
+                    Console.WriteLine($"Result: {num1} - {num2} = " + result);
+                    break;
+                case "*":
+                    result = num1 * num2;
+                    Console.WriteLine($"Result: {num1} * {num2} = " + result);
+                    break;
+                case "/":
+                    result = num1 / num2;
+                    Console.WriteLine($"Result: {num1} / {num2} = " + result);
+                    break;
+            }
             Console.ReadKey();
         }
     }
