@@ -28,6 +28,7 @@ namespace MyApp
             Console.WriteLine("\t- substract");
             Console.WriteLine("\t* multiply");
             Console.WriteLine("\t/ divide");
+            Console.Write("Enter an option: ");
 
             switch(Console.ReadLine())
             {
@@ -46,6 +47,9 @@ namespace MyApp
                 case "/":
                     result = num1 / num2;
                     Console.WriteLine($"Result: {num1} / {num2} = " + result);
+                    break;
+                default:
+                    Console.WriteLine("That is not a valid option");
                     break;
             }
             Console.ReadKey();
